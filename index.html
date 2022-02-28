@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <main class="main-container" id="main-container">
+      <section id="current-info-container">
+        <!-- LEFT -->
+        <div class="col-left">
+          <!-- Time-info -->
+          <div id="current-time-info">
+            <div id="time">12:30 <span>AM</span></div>
+            <div id="date">Mandag, 28 Feb</div>
+            <!-- Weather-info -->
+            <div id="current-weather-info">
+              <!-- Item -->
+              <div id="current-weather-item">
+                <span>Fugtighed</span>
+                <span>12%</span>
+              </div>
+              <!-- Item -->
+              <div id="current-weather-item">
+                <span>Tryk</span>
+                <span>450</span>
+              </div>
+              <!-- Item -->
+              <div id="current-weather-item">
+                <span>Vindhastighed</span>
+                <span>3</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- RIGHT -->
+        <div class="col-right">
+          <section id="current-location-container">
+            <div id="time-zone">Europe/Aalborg</div>
+            <div id="cords">DK</div>
+          </section>
+        </div>
+      </section>
+
+      <section id="future-forecast-container">
+        <!-- TODAY -->
+        <div id="weather-today-container">
+          <!-- <div class="day">Mandag</div>
+          <img
+            class="w-icon"
+            src="http://openweathermap.org/img/wn/01d@2x.png"
+            alt="weather-icon"
+          />
+          <div class="col">
+            <div class="day">Nat</div>
+            <div class="temp">Nat - 4&#176; C</div>
+            <div class="temp">Dag - 6&#176; C</div>
+          </div> -->
+        </div>
+        <!-- FUTURE -->
+        <div id="other-days-container">
+          <!-- Item -->
+          <div class="weather-forecast-item">
+            <div class="day">Tirsdag</div>
+            <img
+              class="w-icon"
+              src="http://openweathermap.org/img/wn/02d@2x.png"
+              alt="weather-icon"
+            />
+            <div class="temp">Nat - 4&#176; C</div>
+            <div class="temp">Dag - 6&#176; C</div>
+          </div>
+          <!-- Item -->
+          <div class="weather-forecast-item">
+            <div class="day">Tirsdag</div>
+            <img
+              class="w-icon"
+              src="http://openweathermap.org/img/wn/02d@2x.png"
+              alt="weather-icon"
+            />
+            <div class="temp">Nat - 4&#176; C</div>
+            <div class="temp">Dag - 6&#176; C</div>
+          </div>
+          <!-- Item -->
+          <div class="weather-forecast-item">
+            <div class="day">Tirsdag</div>
+            <img
+              class="w-icon"
+              src="http://openweathermap.org/img/wn/02d@2x.png"
+              alt="weather-icon"
+            />
+            <div class="temp">Nat - 4&#176; C</div>
+            <div class="temp">Dag - 6&#176; C</div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+      integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

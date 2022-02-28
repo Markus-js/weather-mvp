@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+    height: 100vh;
+    /* font-family: "Poppins"; */
+}
+
+.main-container {
+    padding: 20px 70px;
+}
+
+#current-info-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: red;
+}
+
+#time {
+    font-size: 1.8rem;
+}
+#date {
+    font-size: 1.5rem;
+}
+
+/* FORECAST */
+#future-forecast-container,
+#other-days-container {
+    display: flex;
+    gap: 20px;
+}
+#future-forecast-container {
+    overflow-y: scroll;
+}
+
+#other-days-container {
+    width: 100%;
+}
+
+/* TODAY */
+#weather-today-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background: green;
+}
+
+/* OTHER DAYS */
+.weather-forecast-item {
+    border: 1px solid #ccc;
+    padding: 20px;
+}
